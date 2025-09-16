@@ -1,4 +1,4 @@
-# 📝 notes-cli
+# 📝 Zettli
 
 A tiny, fast, and hackable **command‑line note manager** built with `fzf` + `neovim` + `ripgrep`.  
 Perfect for quick Markdown notes, Zettelkasten workflows, or just keeping thoughts organized.  
@@ -18,10 +18,10 @@ Perfect for quick Markdown notes, Zettelkasten workflows, or just keeping though
 
 ### Clone & Symlink
 ```bash
-git clone https://github.com/yourname/notes-cli
-cd notes-cli
-chmod +x notes.sh
-sudo ln -s $PWD/notes.sh /usr/local/bin/notes
+git clone https://github.com/danieledema/zettli
+cd zettli
+chmod +x zettli.sh
+sudo ln -s $PWD/zettli.sh /usr/local/bin/zettli
 ```
 
 Now you can run notes from anywhere 🎉
@@ -29,8 +29,8 @@ Now you can run notes from anywhere 🎉
 ### Or One‑Line Install (Unix)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourname/notes-cli/main/notes.sh \
-  -o /usr/local/bin/notes && chmod +x /usr/local/bin/notes
+curl -sSL https://raw.githubusercontent.com/danieledema/zettli/main/zettli.sh \
+  -o /usr/local/bin/zettli && chmod +x /usr/local/bin/zettli
 ```
 
 ## 📦 Dependencies
@@ -46,7 +46,7 @@ Make sure you have these installed:
 ### Create a new note
 
 ```bash
-notes new "Daily Reflection"
+zettli new "Daily Reflection"
 ```
 
 👉 Opens picker for folder → creates 202509171230-Daily-Reflection.md with YAML frontmatter.
@@ -54,14 +54,14 @@ notes new "Daily Reflection"
 ### Open an existing note
 
 ```bash
-notes open
+zettli open
 ```
 
 👉 Interactive fuzzy search of notes with preview window.
 
 ### Search notes
 ```bash
-notes search keyword
+zettli search keyword
 ```
 
 👉 Uses ripgrep to find matches inside all .md notes.
@@ -78,7 +78,7 @@ notes search keyword
 You can customize where your notes live and which editor is used.
 
 **Environment variables:**
-- `NOTES_DIR` — Base directory for notes (default: `~/.dropbox/Dropbox/Applicazioni/zettlr`)
+- `NOTES_DIR` — Base directory for notes (default: `~/zettli`)
 - `NOTES_EDITOR` — Editor to launch (default: `$EDITOR` if set, otherwise `nvim`)
 
 Example:

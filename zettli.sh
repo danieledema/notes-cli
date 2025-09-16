@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Default note base directory (can be overridden by $NOTES_DIR)
-base="${NOTES_DIR:-$HOME/.dropbox/Dropbox/Applicazioni/zettlr}"
+base="${NOTES_DIR:-$HOME/zettli}"
 mkdir -p "$base"
 
 # Default editor (can be overridden by $EDITOR or $NOTES_EDITOR)
