@@ -73,6 +73,20 @@ notes search keyword
     ├── 202509171230-Daily-Reflection.md
     └── 202509171450-Project-Idea.md
 
+## ⚙️ Configuration
+
+You can customize where your notes live and which editor is used.
+
+**Environment variables:**
+- `NOTES_DIR` — Base directory for notes (default: `~/.dropbox/Dropbox/Applicazioni/zettlr`)
+- `NOTES_EDITOR` — Editor to launch (default: `$EDITOR` if set, otherwise `nvim`)
+
+Example:
+```bash
+export NOTES_DIR="$HOME/Documents/Notes"
+export NOTES_EDITOR="vim"
+```
+
 ## 🤝 Contributing
 
 PRs welcome! If you’ve got improvements, bug fixes, or ideas, just:
