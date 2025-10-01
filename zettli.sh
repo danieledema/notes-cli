@@ -33,7 +33,7 @@ notes_new() {
         break
         ;;
       *)
-        dir="$base/$menu"
+        dir="$dir/$menu"
         ;;
     esac
   done
